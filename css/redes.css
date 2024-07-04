@@ -1,0 +1,27 @@
+.redes {
+    position: fixed;
+    top: 400px;
+    z-index: 2;
+    right: 0px;
+}
+
+#Whatsapp a {
+    background-color:#42e35f;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    width: 55px;
+    transition: all .5s ease;
+    font-size: 40px;
+}
+
+#Whatsapp a:hover {
+    background-color: #fff;
+    color: #42e35f;
+}   
+
+@media screen and (max-width: 400px) {
+    #Whatsapp a {
+        width: 40px;
+    }
+}

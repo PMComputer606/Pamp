@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/redes.css" />
+    <link rel="icon" type="image/png" href="images/log.jpg" />
+
+    <title>PAMPARED</title>
+
+    <script
+      src="https://kit.fontawesome.com/41bcea2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="redes">
+      <div id="Whatsapp"><a href="https://wa.me/5493515479162" target="_blank" class="fab fa-whatsapp"></a></div>
+    </div>
+
+    <header>
+      <nav>
+        <section class="container-nav">
+          <div class="logo">
+            <a href="index.html"><img src="images/log.jpg" alt="" /></a>
+          </div>
+          <div class="enlaces-header">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="empresa.html">Empresa</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="contacto.html" id="select">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="hamburguer">
+            <i class="fas fa-bars"></i>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <div class="container--contac">
+      <div class="container--contacto">
+        <div class="contacto"></div>
+      </div>
+      <form action="enviar.php" method="post">
+        <h2>CONTACTO</h2>
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="text" name="correo" placeholder="Correo" required />
+        <input type="text" name="telefono" placeholder="Telefono" required />
+        <textarea name="mensaje" placeholder="escriba aqui" required></textarea>
+        <input type="submit" value="ENVIAR" id="boton" />
+      </form>
+    </div>
+    <!----------------FOOTER---------------->
+    <footer>
+      <div class="contenedor__footer">
+        <div class="content__footer">
+          <img src="images/log.jpg" alt="" class="footer-img">
+        </div>
+      </div>
+      <h2 class="titulo__foot">
+        &copy;Pampared | Desarrollado por TagNameDigital
+      </h2>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

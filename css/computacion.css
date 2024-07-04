@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+}
+
+/*MENU*/
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header::before {
+  content: "";
+  display: block;
+  margin-bottom: 70px;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #0042836b;
+  border-bottom: 1px solid transparent;
+  box-shadow: 1px 1px 0 rgba(100, 64, 233, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: ease-in-out 0.5s;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.container-nav .logo {
+  height: 60px;
+}
+
+.container-nav .logo img {
+  height: 100%;
+  vertical-align: top;
+  margin-right: 100px;
+}
+
+/*COVER*/
+.container--cover {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(#ff00cc, #333399);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #fff;
+}
+
+.cover {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container--cover .text__cover {
+  max-width: 400px;
+  width: 600px;
+}
+
+.container--cover .text__cover h1 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-left: 10px;
+  color: #2a0e72;
+  width: 100%;
+  text-shadow: 0 0 4px #fff;
+}
+
+.container--cover .text__cover p {
+  font-size: 1.7em;
+}
+
+.container--cover .img2 img {
+  margin-top: 50px;
+  width: 550px;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+}
+
+/*COVER SECOND*/
+.container__cover--second {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(#333399, #ff00cc);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.cover__second {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image__cover--second .text {
+  max-width: 400px;
+  width: 600px;
+}
+
+.text__cover--second p {
+  font-size: 1.7em;
+  margin-left: 20px;
+}
+
+.image__cover--second img {
+  margin-top: 50px;
+  width: 550px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+}
+
+/*FOOTER*/
+footer {
+  background-color: #00428391;
+}
+
+.content__footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.titulo__foot {
+  text-align: center;
+  background-color: #073c8d;
+  color: #c5c8cf;
+  font-weight: 300;
+  font-size: 1.2em;
+  height: 50px;
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+/*RESPNSIVE*/
+@media screen and (max-width: 800px) {
+  /*COVER*/
+  .container--cover {
+    width: 100%;
+    height: 500px;
+  }
+
+  .container--cover .text__cover h1 {
+    font-size: 2.6em;
+    margin-left: 20px;
+  }
+
+  .container--cover .text__cover p {
+    font-size: 1.4em;
+    margin-left: 30px;
+  }
+
+  .container--cover .img2 img {
+    margin-top: 50px;
+    width: 400px;
+  }
+
+  /*COVER SECOND*/
+  .container__cover--second {
+    width: 100%;
+    height: 500px;
+  }
+
+  .image__cover--second img {
+    margin-top: 50px;
+    width: 400px;
+    margin-left: 20px;
+  }
+
+  /*FOOTER*/
+  footer {
+    background-color: #004183;
+  }
+
+  .content__footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content__footer h1 {
+    font-size: 2.3em;
+  }
+
+  .titulo__foot {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*COVER*/
+  .container--cover {
+    width: 100%;
+    height: 450px;
+  }
+
+  .cover {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container--cover .text__cover h1 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+    margin-left: 60px;
+  }
+
+  .container--cover .text__cover p {
+    font-size: 1.2em;
+    margin-top: -30px;
+    margin-left: 60px;
+  }
+
+  .container--cover .img2 img {
+    margin-top: 0px;
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  /*COVER SECOND*/
+  .container__cover--second {
+    width: 100%;
+    height: 450px;
+  }
+
+  .cover__second {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .text__cover--second p {
+    font-size: 1.2em;
+  }
+
+  .image__cover--second img {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /*COVER*/
+  .container--cover .text__cover h1 {
+    font-size: 1.9em;
+    margin-bottom: 30px;
+  }
+
+  .container--cover .text__cover p {
+    font-size: 1.1em;
+  }
+
+  .container--cover .img2 img {
+    margin-top: 0px;
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  /*COVER SECOND*/
+  .text__cover p {
+    margin-left: 80px;
+    font-size: 1.1em;
+  }
+
+  .image__cover img {
+    margin-top: -10px;
+    width: 300px;
+  }
+
+  /*FOOTER*/
+  .content__footer h1 {
+    font-size: 2em;
+  }
+
+  .titulo__foot {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  /*COVER*/
+  .container--cover {
+    width: 100%;
+    height: 350px;
+  }
+
+  .container--cover .text__cover h1 {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+  }
+
+  .container--cover .text__cover p {
+    font-size: .8em;
+  }
+
+  .container--cover .img2 img {
+    margin-top: 0px;
+    width: 250px;
+    margin-right: 10px;
+  }
+
+  /*COVER SECOND*/
+  .container__cover--second {
+    width: 100%;
+    height: 350px;
+  }
+
+  .text__cover--second p {
+    margin-left: 80px;
+    font-size: .8em;
+    margin-left: 5px;
+  }
+
+  .image__cover--second img {
+    margin-top: -10px;
+    width: 250px;
+    margin-right: 20px;
+  }
+
+  /*FOOTER*/
+  .content__footer h1 {
+    font-size: 1.5em;
+  }
+
+  .titulo__foot {
+    font-size: .7em;
+  }
+}
