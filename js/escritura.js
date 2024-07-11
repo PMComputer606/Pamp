@@ -2,7 +2,7 @@
 const typed = new Typed('.typed', {
 	strings: [
 		'<i class="titulo">Atención personalizada</i>',
-		'<i class="titulo">No require linea telefónica</i>',
+		'<i class="titulo">No requiere linea telefónica</i>',
 	],
 
 	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
