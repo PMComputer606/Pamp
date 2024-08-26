@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /*MENU*/
@@ -82,7 +83,7 @@ nav {
   height: 80px;
   display: none;
   text-align: center;
-  z-index: 1;
+  z-index: 4;
   cursor: pointer;
   transition: color 0.5s ease-in;
 }
@@ -470,9 +471,8 @@ footer {
 
   .hamburguer {
     display: block;
-    margin-right: 60px;
+    margin-right: 40px;
   }
-
   .container-nav .menudos {
     -webkit-clip-path: circle(150% at 100% 0);
     clip-path: circle(150% at 100% 0);
@@ -680,7 +680,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   /*ABOUT*/
   .about {
     width: 180px;
